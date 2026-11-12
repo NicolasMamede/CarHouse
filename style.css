@@ -388,3 +388,10 @@ main {
 .motor3d-toolbar{border-bottom:1px solid #273344}.motor3d-bottom{background:#111a27;border-top:1px solid #273344;color:#92a9bd;font-size:10px}
 .motor3d-dot{height:8px;width:8px;background:#f04949;border-radius:50%;box-shadow:0 0 12px #e63946}.motor3d-muted{color:#75899f;margin-right:auto}.motor3d-help{color:#94a6b7;letter-spacing:0;font-weight:400}.motor3d-tools{position:absolute;bottom:53px;left:16px;display:flex;flex-wrap:wrap;gap:7px}.motor3d-tools .btn{background:#111a27c9;font-size:12px}.motor3d-tools .btn:hover{background:#b72b35;color:white}.motor-tempo,.motor-peca{transition:transform .2s}.motor-peca:hover{transform:translateY(-3px)}
 @media(max-width:650px){.motor-3d canvas{height:400px}.motor3d-help{display:none}.motor3d-bottom{font-size:9px}.motor3d-tools{left:8px;bottom:49px;gap:3px}.motor3d-tools .btn{padding:5px;font-size:10px}}
+
+.motor-3d { border: 1px solid #45596b; box-shadow: 0 20px 65px #000b; }
+.motor-3d canvas { height: 620px; }
+.motor3d-toolbar { background: #141d28; }
+.motor3d-bottom { background: #141d28; }
+.motor3d-tools .btn { border-radius: 5px; }
+@media (max-width: 650px) { .motor-3d canvas { height: 410px; } }
