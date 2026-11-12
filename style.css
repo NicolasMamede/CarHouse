@@ -1,0 +1,390 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+.navbar {
+    border-bottom: 1px solid grey;
+}
+
+.marca {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(194, 1, 1);
+    border-radius: 3px;
+}
+
+.fontev {
+    color: red;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white;
+    padding: 10px 14px;
+    border: 0;
+    background: none;
+    text-align: left;
+}
+
+.navbar .nav-link:hover {
+    color: red;
+}
+
+.navbar .nav-link.active {
+    color: white;
+    border-bottom: 2px solid red;
+}
+
+.secao {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.intro-galeria {
+    padding-top: 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    color: red;
+    font-weight: bold;
+}
+
+.titulo-principal {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+.titulo-secao {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.descricao-secao {
+    color: lightgrey;
+    margin-bottom: 25px;
+}
+
+.texto-intro {
+    text-align: justify;
+    font-size: large;
+}
+
+.imagem-intro {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagem-carrossel {
+    width: 100%;
+    height: 440px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.carousel {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table thead th {
+    border-bottom: 2px solid red;
+}
+
+.cartao-carro {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    border: 1px solid grey;
+}
+
+.cartao-carro .card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.cartao-carro .card-text {
+    color: lightgrey;
+}
+
+.formulario-area {
+    max-width: 700px;
+    padding: 25px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+}
+
+.grupo-curiosidades {
+    max-width: 620px;
+    width: 100%;
+}
+
+.grupo-curiosidades .btn {
+    padding: 12px 6px;
+}
+
+.btn:hover {
+    background-color: rgb(194, 1, 1);
+    color: white;
+    border-color: rgb(194, 1, 1);
+}
+
+.modal-content {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+.modal-body {
+    line-height: 1.7;
+}
+
+.nota-imagens {
+    color: lightgrey;
+}
+
+.rodape {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+}
+
+.rodape p {
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .secao {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .titulo-principal {
+        font-size: x-large;
+    }
+
+    .imagem-carrossel {
+        height: 280px;
+    }
+
+    .cartao-carro .card-img-top {
+        height: 200px;
+    }
+
+    .carousel-caption h3 {
+        font-size: medium;
+    }
+
+    .carousel-caption p {
+        font-size: small;
+    }
+}
+
+
+.motor-cabecalho {
+    margin-bottom: 25px;
+}
+
+.motor-painel {
+    background-color: rgb(24, 29, 36);
+    border: 1px solid rgb(70, 78, 90);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.motor-legenda, .motor-medida {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(160, 170, 184);
+    margin-bottom: 7px;
+}
+
+.motor-legenda {
+    color: rgb(239, 78, 78);
+    font-weight: bold;
+}
+
+.motor-nome {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.motor-valor {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.motor-valor small {
+    color: rgb(170, 180, 195);
+    font-size: 12px;
+}
+
+.motor-estado {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(180, 190, 202);
+}
+
+.motor-estado.ligado {
+    color: rgb(80, 220, 150);
+}
+
+.motor-desenho {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: rgb(16, 21, 28);
+    border-radius: 10px;
+}
+
+.motor-desenho svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.motor-botao {
+    margin-bottom: 8px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+#controleRpm {
+    accent-color: red;
+}
+
+.motor-limites {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: rgb(155, 165, 176);
+}
+
+.legenda-cor {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 7px;
+    margin-right: 3px;
+}
+
+.legenda-oleo {
+    background-color: rgb(76, 218, 233);
+}
+
+.legenda-fogo {
+    background-color: rgb(249, 121, 44);
+}
+
+.motor-tempo, .motor-peca {
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 9px;
+    padding: 18px;
+    height: 100%;
+}
+
+.motor-tempo-numero {
+    font-size: 13px;
+    color: rgb(245, 79, 79);
+    font-weight: bold;
+}
+
+.motor-tempo p:last-child {
+    font-size: 14px;
+    color: lightgrey;
+    margin-bottom: 0;
+}
+
+.motor-peca h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.motor-peca p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: lightgrey;
+    margin-bottom: 0;
+}
+
+.motor-nota {
+    border-left: 3px solid red;
+    background-color: rgb(30, 30, 30);
+    padding: 17px;
+    line-height: 1.7;
+    color: lightgrey;
+}
+
+@media (max-width: 576px) {
+    .motor-painel {
+        padding: 13px;
+    }
+
+    .motor-nome {
+        font-size: 21px;
+    }
+
+    .motor-valor {
+        font-size: 20px;
+    }
+
+    .motor-tempo {
+        padding: 12px;
+    }
+}
+
+
+.motor-desenho {
+    border: 1px solid rgb(65, 80, 95);
+    box-shadow: 0 12px 35px rgb(0, 0, 0);
+}
+
+.motor-desenho svg {
+    max-height: 720px;
+}
+
+.motor-painel {
+    background-color: rgb(21, 27, 35);
+}
+
+.motor-3d {position:relative;overflow:hidden;padding:0!important;background:#080d15;border:1px solid #343f4c;border-radius:14px;box-shadow:0 16px 45px #0009;}
+.motor-3d canvas {display:block;width:100%;height:570px;cursor:grab;touch-action:none;}
+.motor-3d canvas:active{cursor:grabbing;}
+.motor3d-toolbar,.motor3d-bottom{display:flex;align-items:center;gap:9px;justify-content:space-between;padding:11px 18px;color:#e5edf4;font-size:11px;font-weight:700;letter-spacing:1.3px;background:#111a27;}
+.motor3d-toolbar{border-bottom:1px solid #273344}.motor3d-bottom{background:#111a27;border-top:1px solid #273344;color:#92a9bd;font-size:10px}
+.motor3d-dot{height:8px;width:8px;background:#f04949;border-radius:50%;box-shadow:0 0 12px #e63946}.motor3d-muted{color:#75899f;margin-right:auto}.motor3d-help{color:#94a6b7;letter-spacing:0;font-weight:400}.motor3d-tools{position:absolute;bottom:53px;left:16px;display:flex;flex-wrap:wrap;gap:7px}.motor3d-tools .btn{background:#111a27c9;font-size:12px}.motor3d-tools .btn:hover{background:#b72b35;color:white}.motor-tempo,.motor-peca{transition:transform .2s}.motor-peca:hover{transform:translateY(-3px)}
+@media(max-width:650px){.motor-3d canvas{height:400px}.motor3d-help{display:none}.motor3d-bottom{font-size:9px}.motor3d-tools{left:8px;bottom:49px;gap:3px}.motor3d-tools .btn{padding:5px;font-size:10px}}
